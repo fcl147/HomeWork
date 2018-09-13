@@ -22,7 +22,7 @@ create table city_all as select s2.id id, s.cityName province,s2.cityName city, 
 通过使用存储过程进行表的分割
 通过在客户端的表的处理
 ###
-       3.1 RANGE 分区 :
+       RANGE 分区 :
 语法:
 create table if not exists city ( id int ) partition by range (id) (partition p1 values less than (10000), partition p2 values less than maxvalue );
 解释: 我们创建一个只有一个ID的表，如果ID是1>>10000就可以写入, 如果不写最后一句代码将会造成大于10000就不可以插入了
