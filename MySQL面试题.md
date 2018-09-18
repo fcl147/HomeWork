@@ -27,8 +27,8 @@ MVCC (Multiversion Concurrency Control)，即多版本并发控制技术,它使得大部分支持行
 ## 6. innodb引擎的4大特性？
 1.插入缓冲（insert buffer) 
 2.二次写(double write) 
-3>.自适应哈希索引(ahi) 
-4>.预读(read ahead) 
+3.自适应哈希索引(ahi) 
+4.预读(read ahead) 
 ## 7. 备份恢复失败如何处理? 
 * 答：首先在恢复之前就应该做足准备工作，避免恢复的时候出错。比如说备份之后的有效性检查、权限检查、空间检查等。如果万一报错，再根据报错的提示来进行相应的调整。
 ## 8. drop， delete truncate的区别？
